@@ -4,6 +4,14 @@ public class schule
     private int     schueler;
     private boolean ganztags;
     
+    
+    public schule(String neuName, int neuSchueler, boolean neuGanztags)
+    {
+        setName(neuName);
+        setSchueler(neuSchueler);
+        setGanztags(neuGanztags);
+    }
+    
     public String getName()
     {
         return name;
@@ -33,4 +41,6 @@ public class schule
     {
         ganztags = neuGanztags;
     }
+    
+    
 }
