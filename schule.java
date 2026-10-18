@@ -42,5 +42,9 @@ public class schule
         ganztags = neuGanztags;
     }
     
+    public void printSchule()
+    {
+        System.out.println(name + " Schule: " + schueler + " Schueler - " + ganztags);
+    }
     
 }
