@@ -55,9 +55,22 @@ public class schule
         this.ganztags = ganztags;
     }
     
+    /*
+       Print Methode
+       Schule: name - schueler Schüler - ganztags
+       Schule: Gymnasium - 800 Schüler - Ganztagsschule
+       Schule: Volksschule - 250 Schüler - Halbtagsschule
+     */
     public void printSchule()
-    {
-        System.out.println(name + " Schule: " + schueler + " Schueler - " + ganztags);
+    { 
+        if (ganztags == true)
+        {
+            System.out.println("Schule: " + name + " - " + schueler + " Schüler - " + "Ganztagsschule");
+        }
+        else
+        {
+            System.out.println("Schule: " + name + " - " + schueler + " Schüler - " + "Halbtagsschule");
+        }
     }
     
 }
