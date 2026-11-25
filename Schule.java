@@ -1,28 +1,28 @@
-public class schule
+public class Schule
 {
     private String  name;
     private int     schueler;
     private boolean ganztags;
     
-    public schule()
+    public Schule()
     {
         setName("UNKN");
+        setSchueler (1);
         setGanztags(false);
-        setSchueler(1);
     }
     
-    public schule(String name, int schueler)
+    public Schule(String name, int schueler)
     {
         setName(name);
         setSchueler(schueler);
         setGanztags(false);
     }
     
-    public schule(String name, int schueler, boolean ganztags)
+    public Schule(String name, int schueler, boolean ganztags)
     {
         setName(name);
+        setSchueler(schueler);
         setGanztags(ganztags);
-        setSchueler(schueler);
     }
     
     public String getName()
@@ -57,6 +57,7 @@ public class schule
         else
         {
             System.out.println("Fehlermeldung: Schüleranzahl muss den Wert zwischen 1 und 5000 haben!");
+            this.schueler = 1;
         }
     }
     
